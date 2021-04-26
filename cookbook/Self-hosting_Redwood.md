@@ -126,9 +126,9 @@ module.exports = {
 }
 ```
 
-> Note: if you need to seed tour production database during your first deployment, you'll need to add `&& yarn rw prisma db seed` to the end of your build command. But don't forget to remove it prior to subsequent deploys!
+> Note: if you need to seed your production database during your first deployment, you'll need to add `&& yarn rw prisma db seed` to the end of your build command. But don't forget to remove it prior to subsequent deploys!
 
-> Caveat: the API seems to only work in fork mode in PM2, not [cluster mode](https://pm2.keymetrics.io/docs/usage/cluster-mode/)
+> Caveat: the API seems to only work in fork mode in PM2, not [cluster mode](https://pm2.keymetrics.io/docs/usage/cluster-mode/).
 
 ## Deploying
 
