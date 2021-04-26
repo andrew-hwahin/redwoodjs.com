@@ -23,12 +23,17 @@ You should have some basic knowledge of the following tools.
 
 ### Project
 
-Add Redwood's API server (in the API workspace) and PM2 (in the root with the -W flag) to your project.
+Add PM2 (in the root with the -W flag) to your project.
 
 ```termninal
-yarn workspace api add @redwoodjs/api-server
 yarn add -D pm2 -W
 ```
+
+> If you're below `v0.29` you'll also have to add `@redwoodjs/api-server`
+>
+> ```
+> yarn workspace api add @redwoodjs/api-server
+> ```
 
 Create a PM2 ecosystem configuration file. For clarity, it's recommended to rename `ecosystem.config.js` to something like `pm2.config.js`.
 
